@@ -290,7 +290,10 @@ def write_binary(image, bytes, BASE_COLOR, red, green, blue, reversed):
 def is_top_heavy(data, BASE_COLOR):
   """
   Determines whether a list is "top heavy", meaning its data is likely on the left.
-  :param 
+  :author: Alec
+  :param [(int,int,int)...] data: the list of data to check
+  :param (int,int,int) BASE_COLOR: the color representing 0
+  :return: whether the data is "top heavy"
   """
   left_0_len = 0
   for i in range(len(data)):
